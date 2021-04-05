@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.backend.apirest.models.entity.Cliente;
@@ -113,7 +112,6 @@ public class ClienteRestController {
 	}
 
 	@DeleteMapping("/clientes/{id}")
-	@ResponseStatus(HttpStatus.NO_CONTENT)
 	public ResponseEntity<?> delete(@PathVariable Long id) {
 		Map<String, Object> response = new HashMap<>();
 		try {
