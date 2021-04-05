@@ -19,7 +19,7 @@ public class BackendApirestApplication {
 	}
 
 	@Bean
-	public Docket productsApi() {
+	public Docket clientesApi() {
 		return new Docket(DocumentationType.SWAGGER_2)
 				.select()
 				.apis(RequestHandlerSelectors.any())
